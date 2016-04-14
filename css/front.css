@@ -1,7 +1,7 @@
 body {
     font-family: 'Open Sans',Helvetica,Arial,sans-serif;
     background-color: rgba(0, 0, 0, 0.9);
-    position: absolute; 
+    position: absolute;
     top: 0;
     bottom: 0;
     right: 0;
@@ -76,49 +76,66 @@ a {
 }
 
 @media (max-width: 450px) {
-ul {
-    text-align: center;
+  ul {
+      text-align: center;
+  }
+  li {
+      border-radius: 0%;
+      border: none;
+      color: white;
+      margin: 8px;
+      display: block;
+      list-style: none;
+      margin: 10px 0px;
+      text-align: center;
+      height: auto;
+      width: auto;
+  }
+  li:hover {
+      background-color: none;
+      transition: none;
+  }
+  a {
+      text-align: justify;
+      border: 2px solid white;
+      border-radius: 5px;
+      color: white;
+      padding: 15px;
+      padding-left: 30px;
+      width: 70%;
+  }
+  a:hover {
+      -webkit-transition: 500ms;
+      -moz-transition: 500ms;
+      transition: 500ms;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      text-decoration: none;
+  }
+  .description {
+      display: inline-block;
+      color: white;
+      font-family: Arial;
+      margin-left: 40px;
+  }
+  .content {
+      padding-top: 60px;
+  }
 }
-li {
-    border-radius: 0%;
-    border: none;
-    color: white;
-    margin: 8px;
-    display: block;
-    list-style: none;
-    margin: 10px 0px;
-    text-align: center;
-    height: auto;
-    width: auto;
+
+.navbar {
+  background-color: rgba(0, 0, 0, 0.58);
+  display: inline-flex;
+  width: 100%;
 }
-li:hover {
-    background-color: none;
-    transition: none;
+
+.navbarElement {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 10px;
+  padding-left: 10px;
+  float: right;
 }
-a {
-    text-align: justify;
-    border: 2px solid white;
-    border-radius: 5px;
-    color: white;
-    padding: 15px;
-    padding-left: 30px;
-    width: 70%;
-}
-a:hover {
-    -webkit-transition: 500ms;
-    -moz-transition: 500ms;
-    transition: 500ms;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    text-decoration: none;
-}
-.description {
-    display: inline-block;
-    color: white;
-    font-family: Arial;
-    margin-left: 40px;
-}
-.content {
-    padding-top: 60px;
-}
+.navbarElement:hover{
+  background-color: white;
 }
