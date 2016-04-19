@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="myApp">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,8 +10,11 @@
         <link rel="stylesheet" href="css/front.css">
         <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        
+        <script src="lib/angular-1.5.3/angular.js"> </script>
+        <script src="JS/main.js"></script>
     </head>
-    <body>
+    <body ng-controller="mainController">
 
         <div class="navbar">
             <div class="navbarElement"> 
@@ -22,6 +25,9 @@
             </div>
             <div class="navbarElement"> 
                 <a href="gallery.html"> Gallery </a>
+            </div>
+            <div class="navbarElement"> 
+                <a href="resume.html"> {{name}}'s Resume</a>
             </div>
         </div>
         <div class="content">
